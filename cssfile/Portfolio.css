@@ -458,7 +458,59 @@ main {
   background: #5fa8ff;
   color: #0a0a0a;
 }
+/* ---- Certifications Header with Filter ---- */
+.cert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-bottom: 2px solid #2a2a2a;
+    padding-bottom: 10px;
+    margin: 30px 0 20px;
+}
 
+.cert-header h2 {
+    color: #5fa8ff;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cert-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cert-filter label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.cert-filter select {
+    padding: 6px 16px;
+    border-radius: 30px;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #2a2a2a;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    outline: none;
+    min-width: 160px;
+}
+
+.cert-filter select:hover {
+    border-color: #5fa8ff;
+}
+
+.cert-filter select:focus {
+    border-color: #5fa8ff;
+    box-shadow: 0 0 0 3px rgba(95, 168, 255, 0.1);
+}
 /* ────────────────────────────────────────────────────────────────
    RESUME
    ──────────────────────────────────────────────────────────────── */
