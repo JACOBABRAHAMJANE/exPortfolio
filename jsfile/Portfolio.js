@@ -67,38 +67,56 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    // ---------------------------------------------
-    // CERTIFICATIONS
-    // ---------------------------------------------
+    // ============================================================
+    // CERTIFICATIONS – Grouped by Category with Dropdown
+    // ============================================================
+
     const certificateItems = [
-        { label: "📚 Programming in Java (NPTEL)", path: "assests/pdfs/certificates_file/nptel/Programming in Java.pdf", type: "pdf" },
-        { label: "📚 Programming in Java — 2nd Term (NPTEL)", path: "assests/pdfs/certificates_file/nptel/Programming In_Java.pdf", type: "pdf" },
-        { label: "🐍 Joy of Computing Using Python (NPTEL)", path: "assests/pdfs/certificates_file/nptel/The Joy of Computing using Python.pdf", type: "pdf" },
-        { label: "🌐 Introduction to Internet of Things — Elite (NPTEL)", path: "assests/pdfs/certificates_file/nptel/Introduction to Internet of Things.pdf", type: "pdf" },
-        { label: "💻 Problem Solving Through Programming in C (NPTEL)", path: "assests/pdfs/certificates_file/nptel/Problem Solving Through Programming In C.pdf", type: "pdf" },
+        // --- NPTEL ---
+        { label: "Programming in Java", path: "assests/pdfs/certificates_file/nptel/Programming in Java.pdf", type: "pdf", category: "NPTEL" },
+        { label: "Programming in Java — 2nd Term", path: "assests/pdfs/certificates_file/nptel/Programming In_Java.pdf", type: "pdf", category: "NPTEL" },
+        { label: "Joy of Computing Using Python", path: "assests/pdfs/certificates_file/nptel/The Joy of Computing using Python.pdf", type: "pdf", category: "NPTEL" },
+        { label: "Introduction to Internet of Things — Elite", path: "assests/pdfs/certificates_file/nptel/Introduction to Internet of Things.pdf", type: "pdf", category: "NPTEL" },
+        { label: "Problem Solving Through Programming in C", path: "assests/pdfs/certificates_file/nptel/Problem Solving Through Programming In C.pdf", type: "pdf", category: "NPTEL" },
 
-        { label: "📱 Google Android Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/1_Google Android Developer.pdf", type: "pdf" },
-        { label: "☁️ Google Cloud Generative AI", path: "assests/pdfs/certificates_file/Edu Skills/short-term/2_Google Cloud Generative - AI.pdf", type: "pdf" },
-        { label: "🤖 Google AI & ML", path: "assests/pdfs/certificates_file/Edu Skills/short-term/3_Google AI-ML.pdf", type: "pdf" },
-        { label: "🔐 Palo Alto Cybersecurity", path: "assests/pdfs/certificates_file/Edu Skills/short-term/4_Palo Alto Cybersecurity.pdf", type: "pdf" },
-        { label: "🤖 UiPath RPA Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/5_Uipath Rpa Developer.pdf", type: "pdf" },
-        { label: "🐍 Python Fullstack Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/6_Python Fullstack Developer.pdf", type: "pdf" },
+        // --- Edu Skills – Short Term ---
+        { label: "Google Android Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/1_Google Android Developer.pdf", type: "pdf", category: "Edu Skills – Short Term" },
+        { label: "Google Cloud Generative AI", path: "assests/pdfs/certificates_file/Edu Skills/short-term/2_Google Cloud Generative - AI.pdf", type: "pdf", category: "Edu Skills – Short Term" },
+        { label: "Google AI & ML", path: "assests/pdfs/certificates_file/Edu Skills/short-term/3_Google AI-ML.pdf", type: "pdf", category: "Edu Skills – Short Term" },
+        { label: "Palo Alto Cybersecurity", path: "assests/pdfs/certificates_file/Edu Skills/short-term/4_Palo Alto Cybersecurity.pdf", type: "pdf", category: "Edu Skills – Short Term" },
+        { label: "UiPath RPA Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/5_Uipath Rpa Developer.pdf", type: "pdf", category: "Edu Skills – Short Term" },
+        { label: "Python Fullstack Developer", path: "assests/pdfs/certificates_file/Edu Skills/short-term/6_Python Fullstack Developer.pdf", type: "pdf", category: "Edu Skills – Short Term" },
 
-        { label: "☁️ Google Cloud GenAI & Google AI-ML — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/1_Google Cloud Generative - AI & Google AI-ML.pdf", type: "pdf" },
-        { label: "🔐 Palo Alto Cybersecurity & UiPath RPA — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/2_Palo Alto Cybersecurity & Uipath Rpa Developer.pdf", type: "pdf" },
-        { label: "🐍 Python Fullstack & Ethical Hacking — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/3_Python Fullstack Developer & Ethical Hacking.pdf", type: "pdf" },
+        // --- Edu Skills – Long Term ---
+        { label: "Google Cloud GenAI & AI-ML — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/1_Google Cloud Generative - AI & Google AI-ML.pdf", type: "pdf", category: "Edu Skills – Long Term" },
+        { label: "Palo Alto Cybersecurity & UiPath RPA — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/2_Palo Alto Cybersecurity & Uipath Rpa Developer.pdf", type: "pdf", category: "Edu Skills – Long Term" },
+        { label: "Python Fullstack & Ethical Hacking — 240hr", path: "assests/pdfs/certificates_file/Edu Skills/long-term/3_Python Fullstack Developer & Ethical Hacking.pdf", type: "pdf", category: "Edu Skills – Long Term" },
 
-        { label: "🐍 100 Days of Code: Python Pro Bootcamp (Udemy, PDF)", path: "assests/pdfs/certificates_file/udemy/Udemey cerificate.pdf", type: "pdf" },
-        { label: "🐍 100 Days of Code: Python Pro Bootcamp (Udemy, image)", path: "assests/pdfs/certificates_file/udemy/UC-80f32016-c5ee-4d9f-b99e-6635d7362d69.jpg", type: "image" },
+        // --- Edu Skills – Virtual Internship Certificates (folder "certificate") ---
+        { label: "Google Android Developer Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/1_Google Android Developer Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "AI-ML Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/2_AI-ML Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "Google Cloud Generative AI Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/3_Google Cloud Generative - AI Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "AI-ML Virtual Internship (Oct-Dec)", path: "assests/pdfs/certificates_file/Edu Skills/certificate/4_AI-ML Virtual_Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "Cybersecurity Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/5_Cybersecurity Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "RPA Developer Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/6_RPA Developer Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
+        { label: "Python Fullstack Developer Virtual Internship", path: "assests/pdfs/certificates_file/Edu Skills/certificate/7_Python Fullstack Developer Virtual Internship.pdf", type: "pdf", category: "Edu Skills – Virtual Internship" },
 
-        { label: "🔐 Cybersecurity Fundamentals (YBI Foundation)", path: "assests/pdfs/certificates_file/ybi intership/Cybersecurity Fundamentals _ Beacon.pdf", type: "pdf" },
-        { label: "☁️ Fundamentals of Cloud Security (YBI Foundation)", path: "assests/pdfs/certificates_file/ybi intership/Fundamentals of Cloud Security _ Beacon.pdf", type: "pdf" },
-        { label: "🛡️ Fundamentals of SOC (YBI Foundation)", path: "assests/pdfs/certificates_file/ybi intership/Fundamentals of SOC (Security Operations Center) _ Beacon.pdf", type: "pdf" },
-        { label: "🌐 Network Security Fundamentals (YBI Foundation)", path: "assests/pdfs/certificates_file/ybi intership/Network Security Fundamentals _ Beacon.pdf", type: "pdf" },
-        { label: "📓 Movie Recommendation Notebook (YBI Foundation, Colab export)", path: "assests/pdfs/certificates_file/ybi intership/project1.ipynb - Colab.pdf", type: "pdf" },
+        // --- Udemy ---
+        { label: "100 Days of Code: Python Pro Bootcamp (PDF)", path: "assests/pdfs/certificates_file/udemy/Udemey cerificate.pdf", type: "pdf", category: "Udemy" },
+        { label: "100 Days of Code: Python Pro Bootcamp (Image)", path: "assests/pdfs/certificates_file/udemy/UC-80f32016-c5ee-4d9f-b99e-6635d7362d69.jpg", type: "image", category: "Udemy" },
 
-        { label: "🌐 Agnirva Web Development Internship", path: "assests/pdfs/certificates_file/agnirva/agnirva_intership_certificate.pdf", type: "pdf" },
-        { label: "📊 CodTech Data Science Internship", path: "assests/pdfs/certificates_file/codtech/codtech_internship_certificate.pdf", type: "pdf" }
+        // --- YBI Foundation ---
+        { label: "Cybersecurity Fundamentals", path: "assests/pdfs/certificates_file/ybi intership/Cybersecurity Fundamentals _ Beacon.pdf", type: "pdf", category: "YBI Foundation" },
+        { label: "Fundamentals of Cloud Security", path: "assests/pdfs/certificates_file/ybi intership/Fundamentals of Cloud Security _ Beacon.pdf", type: "pdf", category: "YBI Foundation" },
+        { label: "Fundamentals of SOC", path: "assests/pdfs/certificates_file/ybi intership/Fundamentals of SOC (Security Operations Center) _ Beacon.pdf", type: "pdf", category: "YBI Foundation" },
+        { label: "Network Security Fundamentals", path: "assests/pdfs/certificates_file/ybi intership/Network Security Fundamentals _ Beacon.pdf", type: "pdf", category: "YBI Foundation" },
+        { label: "Movie Recommendation Notebook", path: "assests/pdfs/certificates_file/ybi intership/project1.ipynb - Colab.pdf", type: "pdf", category: "YBI Foundation" },
+
+        // --- Agnirva ---
+        { label: "Agnirva Web Development Internship", path: "assests/pdfs/certificates_file/agnirva/agnirva_intership_certificate.pdf", type: "pdf", category: "Agnirva" },
+
+        // --- CodTech ---
+        { label: "CodTech Data Science Internship", path: "assests/pdfs/certificates_file/codtech/codtech_internship_certificate.pdf", type: "pdf", category: "CodTech" }
     ];
 
     // ---------------------------------------------
@@ -135,22 +153,60 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ---------------------------------------------
-    // RENDER: Certificates
+    // RENDER: Certificates with Dropdown Filter
     // ---------------------------------------------
     const certificatesContainer = document.getElementById("certificatesList");
-    if (certificatesContainer) {
-        certificateItems.forEach(function (cert) {
-            const li = document.createElement("li");
-            const card = document.createElement("div");
-            card.className = "certificate_card";
+    const filterDropdown = document.getElementById("certCategory");
 
-            const span = document.createElement("span");
-            span.textContent = cert.label;
-            card.appendChild(span);
+    if (certificatesContainer && filterDropdown) {
+        // Clear any existing options first (prevents duplication on reload)
+        filterDropdown.innerHTML = '';
 
-            card.appendChild(createViewLink(cert.path, cert.label, "Certificate", cert.type));
-            li.appendChild(card);
-            certificatesContainer.appendChild(li);
+        // Get unique categories (excluding any empty or undefined values)
+        const uniqueCategories = [...new Set(certificateItems.map(cert => cert.category).filter(Boolean))];
+
+        // Add "All Certifications" as the first option
+        const allOption = document.createElement("option");
+        allOption.value = "all";
+        allOption.textContent = "All Certifications";
+        filterDropdown.appendChild(allOption);
+
+        // Add each unique category
+        uniqueCategories.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            filterDropdown.appendChild(option);
+        });
+
+        // Render function
+        function renderCertificates(category) {
+            certificatesContainer.innerHTML = "";
+            const filtered = category === "all"
+                ? certificateItems
+                : certificateItems.filter(cert => cert.category === category);
+
+            filtered.forEach(cert => {
+                const li = document.createElement("li");
+                const card = document.createElement("div");
+                card.className = "certificate_card";
+
+                const span = document.createElement("span");
+                span.textContent = cert.label;
+                card.appendChild(span);
+
+                card.appendChild(createViewLink(cert.path, cert.label, "Certificate", cert.type));
+                li.appendChild(card);
+                certificatesContainer.appendChild(li);
+            });
+        }
+
+        // Initial render (all)
+        renderCertificates("all");
+
+        // Event listener for dropdown change
+        filterDropdown.addEventListener("change", function () {
+            renderCertificates(this.value);
         });
     }
 });
