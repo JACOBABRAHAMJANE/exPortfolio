@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob · Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cssfile/navcss.css" />
+  <link rel="stylesheet" href="cssfile/Home.css" />
+</head>
+<body>
+
+  <header class="sticky_header">
+    <div class="nav_bar">
+      <div class="logo">
+        <img src="assests/imagefile/jacob.jpg" alt="Jacob" />
+        <p>Jacob<span class="logo_light">.dev</span></p>
+      </div>
+      <nav>
+        <ul class="nav_header">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="PortfolioAnalysis.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO – PROFILE HEADER ===== -->
+    <section class="hero_header">
+      <div class="hero_inner">
+        <div class="hero_avatar">
+          <img src="assests/imagefile/jacob.jpg" alt="Jacob" />
+          <span class="hero_status"><span class="dot"></span> Open to work</span>
+        </div>
+        <div class="hero_info">
+          <span class="hero_label">Data Science Student</span>
+          <h1>Jacob Abraham Jane</h1>
+          <p class="hero_bio">B.Tech CSE (Data Science) · Final year · Passionate about building intelligent systems and turning data into decisions.</p>
+          <div class="hero_actions">
+            <a href="About.html" class="btn_primary">About Me →</a>
+            <a href="PortfolioAnalysis.html" class="btn_outline"><i class="fas fa-chart-pie"></i> Dashboard</a>
+          </div>
+          <div class="hero_social">
+            <a href="https://www.linkedin.com/in/pjacobjane" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/JACOBABRAHAMJANE" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:pjajane02@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+918074014003"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ROW ===== -->
+    <section class="stats_row">
+      <div class="stat_block"><span class="stat_num">9</span><span class="stat_tag">Projects</span></div>
+      <div class="stat_divider"></div>
+      <div class="stat_block"><span class="stat_num">23+</span><span class="stat_tag">Certifications</span></div>
+      <div class="stat_divider"></div>
+      <div class="stat_block"><span class="stat_num">5</span><span class="stat_tag">Tech Stacks</span></div>
+      <div class="stat_divider"></div>
+      <div class="stat_block"><span class="stat_num">7.36</span><span class="stat_tag">CGPA</span></div>
+    </section>
+
+    <!-- ===== WHAT I DO – SKILL TILES ===== -->
+    <section class="skill_tiles_section">
+      <div class="section_header">
+        <h2>What I Do</h2>
+        <p>Core areas of expertise</p>
+      </div>
+      <div class="skill_tiles">
+        <div class="skill_tile">
+          <i class="fas fa-code" style="color:#5fa8ff;"></i>
+          <h4>Programming</h4>
+          <p>Python, SQL, Java, C</p>
+        </div>
+        <div class="skill_tile">
+          <i class="fas fa-chart-line" style="color:#7ee0b8;"></i>
+          <h4>Data Analytics</h4>
+          <p>Excel · Tableau · Power BI · Pandas · NumPy</p>
+        </div>
+        <div class="skill_tile">
+          <i class="fas fa-globe" style="color:#ffb454;"></i>
+          <h4>Web Development</h4>
+          <p>Flask · HTML · CSS · JavaScript</p>
+        </div>
+        <div class="skill_tile">
+          <i class="fas fa-brain" style="color:#c9a4ff;"></i>
+          <h4>Machine Learning</h4>
+          <p>Random Forest · XGBoost · LightGBM · CatBoost</p>
+        </div>
+        <div class="skill_tile">
+          <i class="fas fa-tools" style="color:#ff8a8a;"></i>
+          <h4>Tools & Cloud</h4>
+          <p>Git · GitHub · GCP · Figma</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+<section class="featured_projects">
+  <div class="section_header">
+    <h2><i class="fas fa-star" style="color:#ffb454;"></i> Featured Projects</h2>
+    <p>Recent work I'm proud of</p>
+  </div>
+
+  <div class="project_grid">
+    <!-- Card 1 -->
+    <div class="project_card">
+      <span class="project_badge">ML · AI</span>
+      <h3>Employee Attrition Prediction</h3>
+      <p>Random Forest & XGBoost model with SHAP explainability to predict employee turnover.</p>
+      <a href="Portfolio.html" class="project_link">View →</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project_card">
+      <span class="project_badge">Data Analysis</span>
+      <h3>Target Brazil E‑Commerce</h3>
+      <p>SQL-driven analysis of customer behavior, delivery performance, and order patterns.</p>
+      <a href="Portfolio.html" class="project_link">View →</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project_card">
+      <span class="project_badge">Regression</span>
+      <h3>LoanTap Default Prediction</h3>
+      <p>Logistic regression with EDA, feature engineering, and ROC‑AUC evaluation.</p>
+      <a href="Portfolio.html" class="project_link">View →</a>
+    </div>
+  </div>
+
+  <!-- 👇 "View all projects" — AFTER the cards 👇 -->
+  <div class="view_all_wrap">
+    <a href="Portfolio.html" class="view_all_link">View all projects →</a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jacob Abraham Jane. Crafted with <i class="fas fa-heart" style="color:#5fa8ff;"></i></p>
+  </footer>
+
+</body>
+</html>

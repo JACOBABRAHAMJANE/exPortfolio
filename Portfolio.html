@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio · Jacob</title>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="cssfile/navcss.css" />
+  <link rel="stylesheet" href="cssfile/Portfolio.css" />
+  <link rel="stylesheet" href="cssfile/pdfModal.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky_header">
+    <div class="nav_bar">
+      <div class="logo">
+        <img src="assests/imagefile/jacob.jpg" alt="Jacob" />
+        <p>Jacob<span class="logo_light">.dev</span></p>
+      </div>
+      <nav>
+        <ul class="nav_header">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="PortfolioAnalysis.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="portfolio_hero">
+      <span class="badge"><i class="fas fa-folder-open"></i> My Work</span>
+      <h1>Portfolio</h1>
+      <p class="hero_sub">A showcase of my projects, certifications, and skills.</p>
+    </section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills_section">
+  <div class="section_header">
+    <h2><span class="code_icon">&lt;/&gt;</span> My Tech Stack</h2>
+    <p>Tools and technologies I use every day</p>
+  </div>
+
+  <div class="skills_display">
+    <!-- Languages -->
+    <div class="skill_category">
+      <div class="category_header">
+        <span class="category_dot" style="background:#5fa8ff;"></span>
+        <span class="category_name">Languages</span>
+        <span class="category_count">4</span>
+      </div>
+      <div class="skill_pills">
+        <span class="pill">Python</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Java</span>
+        <span class="pill">C</span>
+      </div>
+    </div>
+
+    <!-- Data & Analytics -->
+    <div class="skill_category">
+      <div class="category_header">
+        <span class="category_dot" style="background:#7ee0b8;"></span>
+        <span class="category_name">Data &amp; Analytics</span>
+        <span class="category_count">7</span>
+      </div>
+      <div class="skill_pills">
+        <span class="pill">Excel</span>
+        <span class="pill">Tableau</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">NumPy</span>
+        <span class="pill">Statistics</span>
+        <span class="pill">EDA</span>
+      </div>
+    </div>
+
+    <!-- Web -->
+    <div class="skill_category">
+      <div class="category_header">
+        <span class="category_dot" style="background:#ffb454;"></span>
+        <span class="category_name">Web</span>
+        <span class="category_count">4</span>
+      </div>
+      <div class="skill_pills">
+        <span class="pill">Flask</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="skill_category">
+      <div class="category_header">
+        <span class="category_dot" style="background:#c9a4ff;"></span>
+        <span class="category_name">Machine Learning</span>
+        <span class="category_count">6</span>
+      </div>
+      <div class="skill_pills">
+        <span class="pill">Random Forest</span>
+        <span class="pill">XGBoost</span>
+        <span class="pill">LightGBM</span>
+        <span class="pill">CatBoost</span>
+        <span class="pill">SMOTE</span>
+        <span class="pill">ADASYN</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill_category">
+      <div class="category_header">
+        <span class="category_dot" style="background:#ff8a8a;"></span>
+        <span class="category_name">Tools</span>
+        <span class="category_count">4</span>
+      </div>
+      <div class="skill_pills">
+        <span class="pill">Git</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">GCP</span>
+        <span class="pill">Figma</span>
+      </div>
+    </div>
+  </div>
+</section> 
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects_section">
+      <div class="section_header">
+        <h2><i class="fas fa-rocket" style="color:#5fa8ff;"></i> Projects</h2>
+        <p>Real-world problems I've tackled</p>
+      </div>
+      <div id="projectsList"></div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section class="certificates_section">
+      <div class="section_header">
+        <h2><i class="fas fa-certificate" style="color:#5fa8ff;"></i> Certifications</h2>
+        <p>Continuous learning and upskilling</p>
+      </div>
+      <section class="certificates">
+        <ul id="certificatesList"></ul>
+      </section>
+    </section>
+
+    <!-- ===== RESUME ===== -->
+    <section class="resume_section">
+      <div class="resume_card">
+        <div class="resume_text">
+          <h3><i class="fas fa-file-pdf" style="color:#5fa8ff;"></i> Resume</h3>
+          <p>Download my resume to see my complete experience and achievements.</p>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="pdf-trigger resume_btn"
+          data-path="assests/pdfs/resumefile/P JACOB ABRAHAM JANE_RESUME.pdf"
+          data-title="Jacob Abraham Jane — Resume"
+          data-category="Resume"
+          data-type="pdf"
+        >
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Jacob Abraham Jane. Crafted with <i class="fas fa-heart" style="color:#5fa8ff;"></i></p>
+  </footer>
+
+  <script src="jsfile/Portfolio.js"></script>
+  <script src="jsfile/pdfModal.js"></script>
+</body>
+</html>

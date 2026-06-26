@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Jacob</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cssfile/navcss.css" />
+  <link rel="stylesheet" href="cssfile/Contact.css" />
+</head>
+<body>
+
+  <header class="sticky_header">
+    <div class="nav_bar">
+      <div class="logo">
+        <img src="assests/imagefile/jacob.jpg" alt="Jacob" />
+        <p>Jacob<span class="logo_light">.dev</span></p>
+      </div>
+      <nav>
+        <ul class="nav_header">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Contact.html" class="active">Contact</a></li>
+          <li><a href="PortfolioAnalysis.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-wrapper">
+
+    <section class="contact_hero">
+      <span class="badge"><i class="fas fa-paper-plane"></i> Get in Touch</span>
+      <h1>Let's <span class="name_accent">Connect</span></h1>
+      <p class="hero_sub">I'm always open to new opportunities, collaborations, or just a friendly chat.</p>
+    </section>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+          <div class="text">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:pjajane02@gmail.com">pjajane02@gmail.com</a></div>
+          </div>
+          <span class="arrow-link"><i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card">
+          <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+          <div class="text">
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:+918074014003">+91 80740 14003</a></div>
+          </div>
+          <span class="arrow-link"><i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <!-- Social Row -->
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/pjacobjane" target="_blank" class="social-card">
+            <div class="icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+            <div class="text">
+              <div class="label">LinkedIn</div>
+              <div class="handle">@pjacobjane</div>
+            </div>
+            <span class="arrow-link"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="https://github.com/JACOBABRAHAMJANE/PROJECTS.git" target="_blank" class="social-card">
+            <div class="icon-wrap"><i class="fab fa-github"></i></div>
+            <div class="text">
+              <div class="label">GitHub</div>
+              <div class="handle">JACOBABRAHAMJANE</div>
+            </div>
+            <span class="arrow-link"><i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <!-- Availability -->
+        <div class="contact-card availability-card">
+          <div class="icon-wrap"><i class="fas fa-clock"></i></div>
+          <div class="text">
+            <div class="label">Availability</div>
+            <div class="value" style="font-weight:400;">Open to work · May 2026 graduate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="form-card">
+        <div class="form-header">
+          <h2><i class="fas fa-pen-fancy" style="color:#5fa8ff;"></i> Send a Message</h2>
+          <p>Fill in the details below and I'll get back to you within 24 hours.</p>
+        </div>
+
+        <!-- ⬇️ PASTE YOUR FORMSPREE URL HERE ⬇️ -->
+        <form id="contactForm" action="https://formspree.io/f/mojoeawl" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment"></i> Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project, opportunity, or just say hello…" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <div id="formFeedback">
+            <i class="fas fa-check-circle"></i>
+            <span>Thanks! Your message was sent successfully.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <section class="cta-section">
+      <div class="cta-text">
+        <h3><i class="fas fa-rocket" style="color:#ffb454;"></i> Let's Work Together</h3>
+        <p>Have a project in mind or want to collaborate? Let's make something great.</p>
+      </div>
+      <a href="mailto:pjajane02@gmail.com" class="cta-btn">
+        <i class="fas fa-envelope"></i> Start a Conversation
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jacob Abraham Jane. Crafted with <i class="fas fa-heart" style="color:#5fa8ff;"></i></p>
+  </footer>
+
+  <script src="jsfile/Contact.js"></script>
+</body>
+</html>

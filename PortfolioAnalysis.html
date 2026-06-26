@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Dashboard</title>
+
+    <link rel="stylesheet" href="cssfile/navcss.css" />
+    <link rel="stylesheet" href="cssfile/PA.css" />
+    <link rel="stylesheet" href="cssfile/pdfModal.css" />
+  </head>
+
+  <body>
+    <header class="back_header">
+      <nav>
+        <button class="back_btn" onclick="history.back()">⬅ Back</button>
+      </nav>
+    </header>
+
+    <h1 style="text-align: center">📊 Portfolio Dashboard</h1>
+    <p style="text-align: center">Pick a section to explore Jacob's:</p>
+
+    <div class="chat_container">
+      <div class="topics">
+        <button class="topic-btn" data-topic="introduction">👤 About Jacob</button>
+        <button class="topic-btn" data-topic="skills">⚙️ Skills</button>
+        <button class="topic-btn" data-topic="projects">🚀 Projects</button>
+        <button class="topic-btn" data-topic="education">🎓 Education</button>
+        <button class="topic-btn" data-topic="certifications">📜 Certifications</button>
+        <button class="topic-btn" data-topic="experience">💼 Experience</button>
+        <button class="topic-btn" data-topic="resume">📄 Resume</button>
+        <button class="topic-btn" data-topic="contact">📬 Contact</button>
+      </div>
+      <div class="chat_box">
+        <div class="chat_output" id="chat_output">
+          <div class="bot_message">
+            👋 Welcome to Jacob's Portfolio Dashboard. Pick a section above to see details, view project reports, or download certificates.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jsfile/PA.js"></script>
+    <script src="jsfile/pdfModal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer</title>
+    <link rel="stylesheet" href="cssfile/pdfViewer.css" />
+</head>
+<body>
+    <main class="viewer_shell">
+        <!-- Tab Bar -->
+        <div class="viewer_tabbar">
+            <button type="button" class="back_btn" id="backBtn" aria-label="Go back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5" />
+                    <path d="M12 19l-7-7 7-7" />
+                </svg>
+                <span>Back</span>
+            </button>
+
+            <div class="viewer_path">
+                <span class="category_badge" id="categoryBadge">Category</span>
+                <span class="path_separator">/</span>
+                <span class="file_name" id="fileNameLabel" title="">File</span>
+            </div>
+
+            <a class="download_btn" id="downloadBtn" href="#" download aria-label="Download PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Download</span>
+            </a>
+        </div>
+
+        <!-- Title -->
+        <div class="viewer_heading">
+            <h1 id="viewerTitleText">Loading…</h1>
+            <p class="viewer_subtitle" id="viewerSubtitleText"></p>
+        </div>
+
+        <!-- PDF Viewer -->
+        <section class="viewer_frame_wrap">
+            <div id="pdfModeBlock">
+                <div class="viewer_toolbar">
+                    <button type="button" id="zoomOut" class="zoom_btn">−</button>
+                    <span id="zoomLevel" class="zoom_level">100%</span>
+                    <button type="button" id="zoomIn" class="zoom_btn">+</button>
+                    <span class="page_count" id="pageCount"></span>
+                </div>
+
+                <div class="viewer_canvas_scroll" id="pdfCanvasContainer">
+                    <p class="viewer_loading" id="viewerLoading">Loading preview…</p>
+                </div>
+
+                <div class="viewer_fallback" id="viewerFallback" hidden>
+                    <p>This PDF couldn't be previewed inline.</p>
+                    <a href="#" id="openNewTabPdf" target="_blank" rel="noopener" class="open_new_tab_btn">
+                        Open PDF in a new tab
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jacob's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="jsfile/pdfViewer.js"></script>
+</body>
+</html>
