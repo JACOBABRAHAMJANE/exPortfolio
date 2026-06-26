@@ -16,7 +16,7 @@
 
    pdfViewer.html/.js are untouched and still work standalone (useful
    as a direct shareable link), but are no longer what "View" buttons
-   open by default.\u2B07
+   open by default.
 */
 (function () {
     let modalEl = null;
@@ -40,7 +40,7 @@
                         '<button type="button" id="pdfModalZoomOut" class="pdf_modal_btn">\u2212</button>' +
                         '<span id="pdfModalZoomLevel" class="pdf_modal_zoom">100%</span>' +
                         '<button type="button" id="pdfModalZoomIn" class="pdf_modal_btn">+</button>' +
-                        '<a id="pdfModalDownload" class="pdf_modal_btn pdf_modal_download" download>Download</a>' +
+                        '<a id="pdfModalDownload" class="pdf_modal_btn pdf_modal_download" download> \u2B07 Download</a>' +
                         '<button type="button" id="pdfModalClose" class="pdf_modal_btn pdf_modal_close" aria-label="Close">\u2715</button>' +
                     '</div>' +
                 '</div>' +
