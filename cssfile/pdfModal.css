@@ -1,0 +1,175 @@
+/* pdfModal.css
+   Styling for the in-page PDF/Image/CSV preview overlay injected by
+   pdfModal.js. Dark "editor pane" theme to match pdfViewer.css / the
+   rest of the site — this is a new, additive file, nothing else
+   changes.
+*/
+
+.pdf_modal_overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pdf_modal_overlay.open {
+    display: flex;
+}
+
+.pdf_modal_box {
+    background: #121b2e;
+    border: 1px solid #223047;
+    border-radius: 12px;
+    width: min(900px, 100%);
+    height: min(85vh, 900px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.pdf_modal_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #16213a;
+    border-bottom: 1px solid #223047;
+}
+
+.pdf_modal_badge {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: rgba(95, 168, 255, 0.12);
+    color: #5fa8ff;
+    border: 1px solid rgba(95, 168, 255, 0.3);
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.pdf_modal_badge_project       { color: #7ee0b8; background: rgba(126, 224, 184, 0.12); border-color: rgba(126, 224, 184, 0.3); }
+.pdf_modal_badge_certificate   { color: #5fa8ff; background: rgba(95, 168, 255, 0.12); border-color: rgba(95, 168, 255, 0.3); }
+.pdf_modal_badge_resume        { color: #ffb454; background: rgba(255, 180, 84, 0.14); border-color: rgba(255, 180, 84, 0.3); }
+.pdf_modal_badge_dataset       { color: #c9a4ff; background: rgba(201, 164, 255, 0.12); border-color: rgba(201, 164, 255, 0.3); }
+
+.pdf_modal_title {
+    flex: 1 1 auto;
+    color: #e7edf7;
+    font-weight: 600;
+    font-size: 0.95rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pdf_modal_actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.pdf_modal_btn {
+    background: transparent;
+    border: 1px solid #223047;
+    color: #8694ab;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.15s;
+    line-height: 1.4;
+}
+
+.pdf_modal_btn:hover {
+    border-color: #5fa8ff;
+    color: #5fa8ff;
+}
+
+.pdf_modal_zoom {
+    font-size: 0.78rem;
+    color: #8694ab;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.pdf_modal_close {
+    font-weight: bold;
+}
+
+.pdf_modal_body {
+    flex: 1 1 auto;
+    overflow: auto;
+    background: #525659;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 0;
+}
+
+.pdf_modal_body canvas {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    background: #fff;
+    max-width: calc(100% - 32px);
+    height: auto;
+}
+
+.pdf_modal_image {
+    max-width: calc(100% - 32px);
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    background: #fff;
+    margin: auto;
+}
+
+.pdf_modal_loading {
+    color: #e7edf7;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.pdf_modal_loading a {
+    color: #5fa8ff;
+}
+
+.pdf_modal_csv_table {
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    width: 100%;
+    background: #0b1220;
+    color: #e7edf7;
+}
+
+.pdf_modal_csv_table th,
+.pdf_modal_csv_table td {
+    padding: 6px 12px;
+    border-bottom: 1px solid #223047;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.pdf_modal_csv_table th {
+    position: sticky;
+    top: 0;
+    background: #16213a;
+    color: #5fa8ff;
+}
+
+@media (max-width: 600px) {
+    .pdf_modal_box {
+        height: 90vh;
+    }
+
+    .pdf_modal_title {
+        font-size: 0.85rem;
+    }
+}
